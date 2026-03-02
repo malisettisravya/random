@@ -108,3 +108,8 @@ header img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     flex: 1;
 }
+
+.skills {
+    width: 80%;
+    margin: 40px auto;
+}
