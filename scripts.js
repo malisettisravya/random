@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (contactBtn) {
         contactBtn.addEventListener("click", function () {
             alert("Thanks for visiting my portfolio");
-        });
+        });      
     }
 
 });
