@@ -1,115 +1,91 @@
+body {
+    margin: 0;
+    /* removes default browser spacing */
+    font-family: Arial, sans-serif;
+    /* clean font */
+    background-color: #f4f7fb;
+    /* light professional background */
+}
+
+/* HEADER */
 header {
     display: flex;
     /* makes items horizontal */
     justify-content: space-between;
-    /* pushes left and right apart */
+    /* space between name and nav */
     align-items: center;
-    /* vertical center alignment */
-    background: linear-gradient(to right, purple, blue);
-    /* gradient background */
+    /* vertical center */
     padding: 15px 40px;
-    /* space inside header */
+    /* inside spacing */
+    background-color: #1e3a8a;
+    /* dark professional blue */
+}
+
+header div {
+    color: white;
+    /* name color */
+    font-size: 20px;
+    /* name size */
+    font-weight: bold;
+    /* bold text */
 }
 
 nav ul {
     display: flex;
-    /* makes menu items in row */
+    /* horizontal menu */
     list-style: none;
-    /* removes bullets */
+    /* remove bullets */
     gap: 20px;
-    /* space between menu items */
+    /* space between items */
     margin: 0;
-    /* removes default margin */
+    /* remove default margin */
     padding: 0;
-    /* removes default padding */
+    /* remove default padding */
 }
 
 nav a {
     text-decoration: none;
-    /* removes underline */
+    /* remove underline */
     color: white;
-    /* text color */
+    /* link color */
     font-weight: bold;
-    /* thicker text */
+    /* bold text */
 }
 
-header img {
-    width: 40px;
-    /* controls image size */
-    height: 40px;
-    /* keeps image square */
-    border-radius: 50%;
-    /* makes it circular */
-}
-
-/* Card Style Section */
-.intro {
-    padding: 40px;
-    /* space inside section */
+/* GENERAL SECTION STYLE */
+section {
     width: 80%;
-    /* controls section width */
-    margin: 20px auto;
-    /* centers section */
-}
-
-.intro h2 {
-    font-size: 26px;
-    /* heading size */
-    margin-bottom: 15px;
-}
-
-.intro p {
-    font-size: 16px;
-    /* paragraph size */
-    line-height: 1.5;
-    /* spacing between lines */
-}
-
-.education {
-    width: 80%;
-    /* controls section width */
+    /* section width */
     margin: 40px auto;
-    /* space top-bottom and center */
+    /* center section */
 }
 
-.education h2 {
-    font-size: 26px;
-    /* heading size */
+/* HEADINGS */
+h1,
+h2 {
+    color: #1e3a8a;
+    /* professional dark blue */
+}
+
+/* CARDS */
+.card,
+.education div,
+.skills div,
+.Projects div {
+    background-color: white;
+    /* white card */
+    padding: 20px;
+    /* inside spacing */
+    border-radius: 10px;
+    /* rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    /* soft shadow */
     margin-bottom: 20px;
-    /* space below heading */
-}
-
-.card-container {
-    display: flex;
-    /* makes cards horizontal */
-    gap: 20px;
     /* space between cards */
 }
 
-.card h3 {
-    margin-bottom: 10px;
-    /* space below title */
-}
-
-.card p {
-    margin: 5px 0;
-    /* small spacing between lines */
-}
-
-.projects {
-    width: 80%;
-    margin: 40px auto;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    flex: 1;
-}
-
-.skills {
-    width: 80%;
-    margin: 40px auto;
+/* SKILLS LIST */
+.skills ul {
+    padding-left: 20px;
+    /* proper bullet spacing */
 }
