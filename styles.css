@@ -1,29 +1,97 @@
-body {
+header {
+    display: flex;
+    /* makes items horizontal */
+    justify-content: space-between;
+    /* pushes left and right apart */
+    align-items: center;
+    /* vertical center alignment */
+    background: linear-gradient(to right, purple, blue);
+    /* gradient background */
+    padding: 15px 40px;
+    /* space inside header */
+}
+
+nav ul {
+    display: flex;
+    /* makes menu items in row */
+    list-style: none;
+    /* removes bullets */
+    gap: 20px;
+    /* space between menu items */
     margin: 0;
-    background-color: #f2f2f2;
-    font-family: Arial, sans-serif;
+    /* removes default margin */
+    padding: 0;
+    /* removes default padding */
+}
+
+nav a {
+    text-decoration: none;
+    /* removes underline */
+    color: white;
+    /* text color */
+    font-weight: bold;
+    /* thicker text */
+}
+
+header img {
+    width: 40px;
+    /* controls image size */
+    height: 40px;
+    /* keeps image square */
+    border-radius: 50%;
+    /* makes it circular */
 }
 
 /* Card Style Section */
-.card {
-    width: 60%;                  /* Smaller than full width */
-    margin: 20px auto;           /* Space between sections */
-    padding: 20px;
-    background-color: #e0e0e0;
-    border-radius: 40px;         /* Rounded shape */
-    border: 3px solid black;
-}
-.hero-container {
-    display: flex;              /* Makes items side by side */
-    align-items: center;        /* Vertical alignment */
-    justify-content: space-between; /* Push apart */
+.intro {
+    padding: 40px;
+    /* space inside section */
+    width: 80%;
+    /* controls section width */
+    margin: 20px auto;
+    /* centers section */
 }
 
-.hero-image img {
-    width: 180px;
-    border-radius: 50%;         /* Optional: circle image */
+.intro h2 {
+    font-size: 26px;
+    /* heading size */
+    margin-bottom: 15px;
 }
 
-.hero-text {
-    margin-left: 40px;          /* Space between image and text */
+.intro p {
+    font-size: 16px;
+    /* paragraph size */
+    line-height: 1.5;
+    /* spacing between lines */
+}
+
+.education {
+    width: 80%;
+    /* controls section width */
+    margin: 40px auto;
+    /* space top-bottom and center */
+}
+
+.education h2 {
+    font-size: 26px;
+    /* heading size */
+    margin-bottom: 20px;
+    /* space below heading */
+}
+
+.card-container {
+    display: flex;
+    /* makes cards horizontal */
+    gap: 20px;
+    /* space between cards */
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    /* space below title */
+}
+
+.card p {
+    margin: 5px 0;
+    /* small spacing between lines */
 }
