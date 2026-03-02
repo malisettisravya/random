@@ -95,3 +95,16 @@ header img {
     margin: 5px 0;
     /* small spacing between lines */
 }
+
+.projects {
+    width: 80%;
+    margin: 40px auto;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1;
+}
