@@ -68,7 +68,16 @@ h2 {
 }
 
 /* CARDS */
-.card,
+.card {
+    .card {
+    background-color: white;     /* card background */
+    padding: 20px;               /* inside spacing */
+    border-radius: 10px;         /* rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08); /* soft shadow */
+    width: 30%;                  /* 3 cards in one row */
+    transition: all 0.3s ease;   /* smooth hover animation */
+}
+}
 .education div,
 .skills div,
 .Projects div {
@@ -97,3 +106,14 @@ h2 {
 }
 .dark-mode header { background-color: black; }
 .dark-mode .card { background-color: #1a1a1a; }
+
+.card-container {
+    display: flex;              /* makes cards horizontal */
+    gap: 20px;                  /* space between cards */
+    justify-content: space-between; /* spreads evenly */
+    flex-wrap: wrap;            /* moves down on smaller screen */
+}
+.card:hover {
+    background-color: #f0f0f0;   /* slight color change */
+    transform: translateY(-5px); /* small lift effect */
+}
