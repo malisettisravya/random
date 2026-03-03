@@ -1,18 +1,11 @@
-
+console.log("JS IS CONNECTED");
 document.addEventListener("DOMContentLoaded", function () {
 
-    const modeBtn = document.getElementById("modeBtn");
-    const contactBtn = document.getElementById("contactBtn");
+    const modeBtn = document.getElementById("themeToggle");
 
     if (modeBtn) {
         modeBtn.addEventListener("click", function () {
-            document.body.classList.toggle("dark-mode"); // matches CSS class
-        });
-    }
-
-    if (contactBtn) {
-        contactBtn.addEventListener("click", function () {
-            alert("Thanks for visiting my portfolio");
+            document.body.classList.toggle("dark");
         });
     }
 
