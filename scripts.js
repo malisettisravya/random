@@ -6,14 +6,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (modeBtn) {
         modeBtn.addEventListener("click", function () {
-            document.body.classList.toggle("dark");
+            document.body.classList.toggle("dark-mode"); // matches CSS class
         });
     }
 
     if (contactBtn) {
         contactBtn.addEventListener("click", function () {
             alert("Thanks for visiting my portfolio");
-        });      
+        });
     }
 
 });

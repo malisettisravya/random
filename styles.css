@@ -89,3 +89,11 @@ h2 {
     padding-left: 20px;
     /* proper bullet spacing */
 }
+.right-side {
+    display: flex;              /* make items flexible */
+    flex-direction: column;     /* stack nav and button vertically */
+    align-items: flex-end;      /* move them to right side */
+    gap: 5px;                   /* small space between nav and button */
+}
+.dark-mode header { background-color: black; }
+.dark-mode .card { background-color: #1a1a1a; }
