@@ -158,7 +158,7 @@ h1 {
 }
 
 .card {
-    height: 180px;
+    min-height: 180px;
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -169,16 +169,40 @@ h1 {
 
 /* Responsive Adjustments */
 @media (max-width: 900px) {
+
+    /* Reduce header padding */
+    header{
+        padding: 20px 15px;
+    }
+
+    /* Stack layout */
     .main-layout {
+        padding:15px;
         grid-template-columns: 1fr;
     }
 
+    /* Make grids single column */
     .user-info-grid,
     .category-cards {
         grid-template-columns: 1fr;
     }
-}
 
+    /* Improve typography for mobile */
+    h1 {
+        font-size: 22px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    /* Make cards flexible instead of fixed height */
+    .card {
+        min-height: 180px;
+        height: auto;
+    }
+
+}
 /* Skills Section - Column Boxes */
 .skills-grid {
     display: grid;
